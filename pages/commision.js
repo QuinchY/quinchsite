@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+const commision = () => {
   return (
     <main>
       <Head>
@@ -23,12 +23,14 @@ export default function Home() {
       </nav>
       <section className={styles.main}>
         <h1 className={styles.title}>
-          QUINCH.ART
+          COMMISION
         </h1>
       </section>
       <footer className={styles.footer}>
         © 2022 Quinch Art
       </footer>
     </main>
-  )
+	)
 }
+
+export default commision
