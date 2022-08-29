@@ -1,6 +1,6 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
-import React from 'react'
 
 const art = () => {
   return (
@@ -16,9 +16,15 @@ const art = () => {
             <h1 className="text-2xl">QUINCH.ART</h1>
           </div>
           <div className="flex space-x-5">
-            <a className="text-1xl" href="/">Home</a>
-            <a className="text-1xl" href="/art">Art</a>
-            <a className="text-1xl" href="/commision">Commision</a>
+            <Link href="/">
+              <a className="text-1xl" >Home</a>
+            </Link>
+            <Link href="/art">
+              <a className="text-1xl">Art</a>
+            </Link>
+            <Link href="/commision">
+              <a className="text-1xl">Commision</a>
+            </Link>
           </div>
         </div>
       </nav>
