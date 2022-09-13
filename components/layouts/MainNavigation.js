@@ -2,7 +2,7 @@ import Link from 'next/link'
 import styles from '../../styles/MainNavigation.module.css'
 
 const MainNavigation = () => {
-  return (
+	return (
 		<nav className='flex justify-between px-4 lg:flex lg:justify-between lg:items-center lg:px-32'>
 			<div className='py-8 px-7'>
 				<Link href="/">
