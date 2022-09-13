@@ -1,0 +1,66 @@
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navlogo {
+    font-family: 'bebas neue';
+    font-style: italic;
+    letter-spacing: 0.05rem;
+    font-weight: 900;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    cursor: pointer;
+}
+.navcontainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+.navlinks {
+    font-family: 'bebas neue';
+    letter-spacing: 0.15rem;
+    font-size: 1.25rem;
+}
+.togglebutton {
+    display: flex;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+}
+.hamburgermenu {
+    margin: 2rem;
+    display: none;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: 2.5rem;
+    width: 2.5rem;
+    cursor: pointer;
+}
+.bartop,
+.barmiddle,
+.barbottom {
+    height: 5px;
+    background: black;
+    border-radius: 5px;
+    margin: 3px 0;
+    transform-origin: left;
+    transition: all 0.5s;
+}
+
+.hamburgermenu:hover .bartop {
+    transform: rotate(45deg);
+}
+
+.hamburgermenu:hover .barmiddle {
+    transform: translateX(1rem);
+    opacity: 0;
+}
+
+.hamburgermenu:hover .barbottom {
+    transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 1024px) {
+    .hamburgermenu {
+        display: flex;
+    }
+}
