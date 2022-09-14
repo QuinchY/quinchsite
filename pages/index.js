@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
       <MainNavigation></MainNavigation>
       <section className={styles.main}>
-        
+        <h1 className='flex justify-center'>home</h1>
       </section>
       <footer className={styles.footer}>
         Cyril James De Guzman © 2022
