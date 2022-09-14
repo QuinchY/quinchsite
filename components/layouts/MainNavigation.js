@@ -6,15 +6,15 @@ const MainNavigation = () => {
 		<nav className='flex justify-between px-4 lg:flex lg:justify-between lg:items-center lg:px-32'>
 			<div className='py-8 px-7'>
 				<Link href="/">
-					<h1 className={styles.navlogo}>Logo</h1>
+					<h1 className='font-bebas italic text-3xl font-black cursor-pointer'>Logo</h1>
 				</Link>
 			</div>
-			<ul className='lg:flex justify-evenly hidden'>
-				<li className='px-14'><Link href="/"><a className={styles.navlinks}>Home</a></Link></li>
-				<li className='px-14'><Link href="/"><a className={styles.navlinks}>About</a></Link></li>
-				<li className='px-14'><Link href="/"><a className={styles.navlinks}>Projects</a></Link></li>
+			<ul className='hidden lg:flex lg:justify-evenly'>
+				<li className='px-14'><Link href="/"><a className='font-bebas font-thin text-xl tracking-widest leading-9'>Home</a></Link></li>
+				<li className='px-14'><Link href="/"><a className='font-bebas font-thin text-xl tracking-widest leading-9'>About</a></Link></li>
+				<li className='px-14'><Link href="/"><a className='font-bebas font-thin text-xl tracking-widest leading-9'>Projects</a></Link></li>
 			</ul>
-			<div className='hidden lg:flex py-8 px-7'>
+			<div className='hidden py-8 px-7 lg:flex'>
 				<button className='bg-black w-10 h-10 rounded-lg'></button>
 			</div>
 			<div className={styles.hamburgermenu}>
