@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import MobileNavigation from './MobileNavigation'
 
 const MainNavigation = () => {
 	return (
@@ -16,11 +17,7 @@ const MainNavigation = () => {
 			<div className='hidden py-8 px-7 lg:flex'>
 				<button className='bg-black w-10 h-10 rounded-lg'></button>
 			</div>
-			<div className='flex flex-col-reverse justify-between my-8 mx-3 h-8 w-8 cursor-pointer lg:hidden'>
-				<div className='h-1 bg-black rounded-2xl mt-1'></div>
-				<div className='h-1 bg-black rounded-2xl mt-1'></div>
-				<div className='h-1 bg-black rounded-2xl mt-1'></div>
-			</div>
+			<MobileNavigation/>
 		</nav>
 	)
 }
