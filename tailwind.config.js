@@ -8,6 +8,9 @@ module.exports = {
     extend: {
       fontFamily: {
         bebas: "'Bebas Neue', cursive",
+      },
+      spacing: {
+        'bottom-25': '6.25rem',
       }
     },
   },
