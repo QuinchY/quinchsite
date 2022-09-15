@@ -30,12 +30,15 @@ const MainNavigation = () => {
 					</div>
 				</button>
 			</nav>
-			<div className={menuToggle ? 'flex justify-center fixed bg-zinc-800 w-full h-screen top-0 z-10 translate-x-0 transition ease-in-out duration-1000' : 'flex justify-center fixed bg-zinc-800 w-full h-screen top-0 z-10 translate-x-full transition ease-in-out duration-1000'}>
-				<button className='absolute bg-white h-10 w-10 rounded-full top-8 right-4' onClick={toggleMenu}></button>
-				<ul className={menuToggle ? 'flex flex-col justify-center' : 'hidden'}>
-					<li className='px-14'><Link href="/"><a className='font-bebas font-thin text-white text-xl tracking-widest leading-9'>Home</a></Link></li>
-					<li className='px-14'><Link href="/about"><a className='font-bebas font-thin text-white text-xl tracking-widest leading-9'>About</a></Link></li>
-					<li className='px-14'><Link href="/projects"><a className='font-bebas font-thin text-white text-xl tracking-widest leading-9'>Projects</a></Link></li>
+			<div className={menuToggle ? 'flex justify-center fixed bg-white w-full h-screen top-0 z-10 translate-x-0 transition ease-in-out duration-1000' : 'flex justify-center fixed bg-zinc-800 w-full h-screen top-0 z-10 translate-x-full transition ease-in-out duration-1000'}>
+				<button className='flex flex-col items-center justify-center absolute h-10 w-10 top-8 right-4' onClick={toggleMenu}>
+					<div className='h-0.5 w-7 bg-stone-700 rounded-2xl rotate-45 translate-y-0.5'></div>
+					<div className='h-0.5 w-7 bg-stone-700 rounded-2xl -rotate-45'></div>
+				</button>
+				<ul className={menuToggle ? 'flex flex-col justify-center space-y-8' : 'hidden'}>
+					<li className='px-14'><Link href="/"><a className='font-bebas font-thin text-4xl tracking-widest'>Home</a></Link></li>
+					<li className='px-14'><Link href="/about"><a className='font-bebas font-thin text-4xl tracking-widest'>About</a></Link></li>
+					<li className='px-14'><Link href="/projects"><a className='font-bebas font-thin text-4xl tracking-widest'>Projects</a></Link></li>
 				</ul>
 			</div>
 		</div>
