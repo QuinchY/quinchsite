@@ -36,9 +36,9 @@ const MainNavigation = () => {
 					<div className='h-0.5 w-7 bg-stone-700 rounded-2xl -rotate-45'></div>
 				</button>
 				<ul className={menuToggle ? 'flex flex-col justify-center space-y-8' : 'hidden'}>
-					<li className='px-14'><Link href="/"><a className='font-bebas font-thin text-4xl tracking-widest'>Home</a></Link></li>
-					<li className='px-14'><Link href="/about"><a className='font-bebas font-thin text-4xl tracking-widest'>About</a></Link></li>
-					<li className='px-14'><Link href="/projects"><a className='font-bebas font-thin text-4xl tracking-widest'>Projects</a></Link></li>
+					<li className='px-14'><Link href="/"><a className='font-bebas font-thin text-4xl tracking-widest' onClick={toggleMenu}>Home</a></Link></li>
+					<li className='px-14'><Link href="/about"><a className='font-bebas font-thin text-4xl tracking-widest' onClick={toggleMenu}>About</a></Link></li>
+					<li className='px-14'><Link href="/projects"><a className='font-bebas font-thin text-4xl tracking-widest' onClick={toggleMenu}>Projects</a></Link></li>
 				</ul>
 			</div>
 		</div>
